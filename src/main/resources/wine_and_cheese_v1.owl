@@ -1,0 +1,21 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology#Cheese"/>
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology#OldCheese">
+    <rdfs:subClassOf rdf:resource="http://www.nti.ru/wine-ontology#Cheese"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology#RedWine">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.nti.ru/wine-ontology#Wine"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology#WhiteWine">
+    <rdfs:subClassOf rdf:resource="http://www.nti.ru/wine-ontology#Wine"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology#YoungCheese">
+    <rdfs:subClassOf rdf:resource="http://www.nti.ru/wine-ontology#Cheese"/>
+  </owl:Class>
+</rdf:RDF>
